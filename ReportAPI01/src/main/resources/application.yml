@@ -1,0 +1,20 @@
+
+server:
+  port: 8082
+spring:
+  application:
+    name: ReportAPI01
+  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521:xe
+#    username: amresh
+#    password: Amresh1998  
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///jrtp01
+    username: root
+    password: Amresh1998
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
